@@ -2,32 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+button,
+.button {
+	@apply rounded-lg px-2 py-2.5 ring-1 ring-inset border-[1px] border-b-[2px] select-none
+	ring-neutral-500/20 border-neutral-400/100 transition-all ease-linear duration-75
+	bg-white bg-gradient-to-t from-neutral-200 to-neutral-50 
+	font-medium;
+
+	&:not(:disabled) {
+		@apply drop-shadow-md shadow-inner shadow-white text-neutral-500
+		active:shadow-black/25 active:from-neutral-200 active:to-neutral-200
+		active:border-white active:drop-shadow-none;
+	}
+
+	&:disabled {
+		@apply bg-neutral-300 border-b-[1px] active:bg-neutral-300 text-neutral-400 border-neutral-300;
+	}
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+input,
+.input {
+	@apply px-4 py-3 text-base bg-gradient-to-t from-neutral-100 to-neutral-50 rounded-md ring-2 ring-inset ring-neutral-500/20 text-neutral-600;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+label,
+.label {
+	@apply text-[13px] font-medium text-neutral-500;
 }

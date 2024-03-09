@@ -1,0 +1,79 @@
+{
+	"DraftedTeams": [
+		{
+			"id": "01",
+			"owner": "Jrue",
+			"players": [
+				{ "name": "Georgios Giakoumakis", "id": "239525" },
+				{ "name": "Jesus Ferreira", "id": "251571" },
+				{ "name": "Brian White", "id": "249490" },
+				{ "name": "Chicho Arango", "id": "186385" },
+				{ "name": "Carles Gil", "id": "152168" },
+				{ "name": "Emanuel Reynoso", "id": "233326" },
+				{ "name": "Jordan Morris", "id": "210252" },
+				{ "name": "Emil Forsberg", "id": "148641" },
+				{ "name": "Ryan Gauld", "id": "173404" }
+			]
+		},
+		{
+			"id": "02",
+			"owner": "Zuey",
+			"players": [
+				{ "name": "Denis Bouanga", "id": "213304" },
+				{ "name": "Lucho Acosta", "id": "199958" },
+				{ "name": "Amahl Pellegrino", "id": "207638" },
+				{ "name": "Teemu Pukki", "id": "127520" },
+				{ "name": "Joao Klauss", "id": "150409" },
+				{ "name": "Petar Musa", "id": "277128" },
+				{ "name": "Hugo Cuypers", "id": "235511" },
+				{ "name": "Diego Rubio", "id": "162946" },
+				{ "name": "Julian Carranza", "id": "262566" }
+			]
+		},
+		{
+			"id": "03",
+			"owner": "Ruan",
+			"players": [
+				{ "name": "Lionel Messi", "id": "45843" },
+				{ "name": "Diego Gomez", "id": "192278" },
+				{ "name": "Leo Campagna", "id": "284834" },
+				{ "name": "Antony", "id": "315294" },
+				{ "name": "Dante Sealy", "id": "307221" },
+				{ "name": "Darlington Nagbe", "id": "156157" },
+				{ "name": "Enzo Copetti", "id": "241544" },
+				{ "name": "Riqui Puig", "id": "270611" },
+				{ "name": "Lorenzo Insigne", "id": "139028" }
+			]
+		},
+		{
+			"id": "04",
+			"owner": "Wulker",
+			"players": [
+				{ "name": "Christian Benteke", "id": "106957" },
+				{ "name": "Aaron Boupendza", "id": "260212" },
+				{ "name": "Luis Muriel", "id": "151510" },
+				{ "name": "Dante Vanzeir", "id": "228431" },
+				{ "name": "Josef Martinez", "id": "172688" },
+				{ "name": "Alan Pulido", "id": "136135" },
+				{ "name": "Jeremy Ebobisse", "id": "251805" },
+				{ "name": "Facundo Torres", "id": "67518" },
+				{ "name": "Raul Ruidiaz", "id": "158640" }
+			]
+		},
+		{
+			"id": "05",
+			"owner": "Spuncer",
+			"players": [
+				{ "name": "Cucho Hernandez", "id": "336809" },
+				{ "name": "Hany Mukhtar", "id": "174548" },
+				{ "name": "Daniel Gazdag", "id": "257844" },
+				{ "name": "Sebastian Driussi", "id": "195334" },
+				{ "name": "Luis Suarez", "id": "125088" },
+				{ "name": "Dejan Joveljic", "id": "240110" },
+				{ "name": "Thiago Almada", "id": "277208" },
+				{ "name": "Giacomo Vrioni", "id": "250685" },
+				{ "name": "Mateusz Bogusz", "id": "287841" }
+			]
+		}
+	]
+}
