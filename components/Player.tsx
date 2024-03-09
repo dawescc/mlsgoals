@@ -1,6 +1,6 @@
 import { fetchPlayerInfo, fetchPlayerStats } from "./actions";
 
-export default async function Player({ id }) {
+export default async function Player({ id }: any) {
 	const info = await fetchPlayerInfo({ id });
 	const goals = await fetchPlayerStats({ id });
 
