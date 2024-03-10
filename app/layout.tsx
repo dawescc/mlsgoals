@@ -5,19 +5,19 @@ const defaultUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` 
 
 export const metadata = {
 	metadataBase: new URL(defaultUrl),
-	title: "Next.js and Supabase Starter Kit",
-	description: "The fastest way to build apps with Next.js and Supabase",
+	title: "MG MLS Goal Race",
+	description: "Mind Goblin's 2024 MLS Goal Draft",
 	openGraph: {
-		title: "Next.js and Supabase Starter Kit",
-		description: "The fastest way to build apps with Next.js and Supabase",
+		title: "MG MLS Goal Race",
+		description: "Mind Goblin's 2024 MLS Goal Draft",
 		url: `${defaultUrl}`,
-		siteName: "Next.js and Supabase Starter Kit",
+		siteName: "MG MLS Goal Race",
 		type: "website",
 		images: [
 			{
 				width: 1200,
 				height: 600,
-				alt: "Preview image for Next.js and Supabase",
+				alt: "Mind Goblin's 2024 MLS Goal Draft",
 			},
 		],
 	},
