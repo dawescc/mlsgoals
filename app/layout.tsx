@@ -31,7 +31,7 @@ const fontSans = FontSans({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html suppressHydrationWarning>
-			<body className={`${fontSans.className} antialiased`}>{children}</body>
+			<body className={`${fontSans.className} antialiased px-4 sm:px-0`}>{children}</body>
 		</html>
 	);
 }
