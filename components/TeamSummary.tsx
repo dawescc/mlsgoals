@@ -28,7 +28,7 @@ const TeamsGoals = async () => {
 			{teamGoals.map((item: any) => (
 				<div
 					key={item.owner}
-					className='border-b-[0.5px]'>
+					className='border-b-[0.5px] border-black/5 dark:border-white/15'>
 					<div className='w-full flex items-center justify-between py-2'>
 						<span>{item.owner}</span>
 						<span className='opacity-[55%]'>{item.totalGoals}</span>
