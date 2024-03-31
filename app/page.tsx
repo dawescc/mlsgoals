@@ -1,22 +1,19 @@
-import { Suspense } from "react";
-import Team from "@/components/Team";
-import TeamsGoals from "@/components/TeamSummary";
-import data from "@/draftedTeams.json";
-const DraftedTeams = data.DraftedTeams;
+import TeamSummaries from "@/components/TeamSummaries";
+import Leaderboard from "@/components/Leaderboard";
+import fetchTeamGoals from "./lib/fetchTeamGoals";
 
-export default function Index() {
+export default async function Index() {
+	const data = await fetchTeamGoals();
 	return (
-		<Suspense fallback={<div>Loading...</div>}>
-			<div className='flex flex-col gap-10 mx-auto max-w-xl pt-20 pb-20'>
-				<TeamsGoals />
-				{DraftedTeams.map((team) => (
-					<Team
-						players={team.players}
-						owner={team.owner}
-						key={team.id}
-					/>
-				))}
-			</div>
-		</Suspense>
+		<div className='relative flex flex-col lg:flex-row lg:h-screen lg:overflow-hidden'>
+			<Leaderboard
+				className='flex-[1_1_50%] sticky'
+				teams={data}
+			/>
+			<TeamSummaries
+				className='flex-[1_1_100%]'
+				teams={data}
+			/>
+		</div>
 	);
 }

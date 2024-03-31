@@ -3,6 +3,27 @@
 @tailwind utilities;
 
 body {
-	@apply bg-white text-black font-light text-sm
-	dark:bg-black dark:text-white/90;
+	@apply bg-white text-black font-light
+	dark:bg-black dark:text-white/90
+	text-[3rem]/[1] antialiased;
+}
+
+.footer {
+	@apply text-[10px]/[1] text-center py-10 mt-2 bg-[hsl(0,0%,95%)] dark:bg-[hsl(0,0%,5%)];
+}
+
+.bg-colors {
+	@apply bg-white text-black dark:bg-black dark:text-white/90;
+}
+
+h1 {
+	@apply font-black text-[3.25rem]/[1.25];
+}
+
+h2 {
+	@apply font-semibold text-[3.15rem]/[1.15];
+}
+
+h3 {
+	@apply font-medium text-[3.05rem]/[1.05];
 }
