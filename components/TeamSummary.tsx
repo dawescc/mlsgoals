@@ -7,14 +7,13 @@ const TeamsGoals = async () => {
 
 	const newTeamGoals = await Promise.all(
 		DraftedTeams.map(async (team) => {
-			let totalGoals = 0;
-
-			await Promise.all(
-				team.players.map(async (player) => {
-					const goals = await fetchPlayerStats({ id: player.id });
-					totalGoals += goals;
-				})
-			);
+			let totalGoals = (
+				await Promise.all(
+					team.players.map(async (player) => {
+						return await fetchPlayerStats({ id: player.id });
+					})
+				)
+			).reduce((a, b) => a + b, 0);
 
 			return { owner: team.owner, totalGoals };
 		})
