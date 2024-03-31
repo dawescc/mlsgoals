@@ -10,7 +10,7 @@ export default async function Player({ id }: any) {
 	};
 
 	return (
-		<div className='flex items-center justify-between py-1'>
+		<div className='flex items-center justify-between py-1 text-[1.5rem]/[1.25]'>
 			<p>{player.info.fullName}</p>
 			<p>{player.goals}</p>
 		</div>

@@ -1,4 +1,4 @@
-import { Be_Vietnam_Pro as FontSans } from "next/font/google";
+import { Noto_Sans as FontSans } from "next/font/google";
 import "./globals.css";
 
 const defaultUrl = process.env.VERCEL_URL ? `https://mls.dawes.cc/` : "http://localhost:3000";
@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<html
 			suppressHydrationWarning
 			lang='en'>
-			<body className={`${fontSans.className} antialiased px-4 sm:px-0`}>{children}</body>
+			<body className={`${fontSans.className} text-[3rem]/[1] antialiased px-4 sm:px-0`}>{children}</body>
 		</html>
 	);
 }
