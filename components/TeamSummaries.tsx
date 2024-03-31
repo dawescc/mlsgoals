@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function TeamSummaries({ teams, className }: any) {
 	return (
-		<div className={`relative lg:overflow-auto ${className}`}>
+		<div className={`relative scroll-smooth lg:overflow-auto ${className}`}>
 			<h2 className='sticky lg:relative top-0 bg-colors px-1'>
 				<a href='/'>Teams</a>
 			</h2>
