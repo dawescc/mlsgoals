@@ -9,4 +9,4 @@ push:
 	@git add -A
 	@git commit -m "${msg}"
 	@git push > /dev/null 2>&1
-	@echo Commit with message \""${msg}"\" created and pushed to remote
+	@echo Commit \""${msg}"\" created and pushed to remote
