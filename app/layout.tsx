@@ -33,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<html
 			suppressHydrationWarning
 			lang='en'>
-			<body className={`${fontSans.className} text-[3rem]/[1] antialiased px-4 sm:px-0`}>{children}</body>
+			<body className={`${fontSans.className}`}>{children}</body>
 		</html>
 	);
 }
