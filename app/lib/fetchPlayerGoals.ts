@@ -2,7 +2,12 @@
 
 export async function fetchPlayerGoals(id: string) {
 	const res = await fetch(
-		`http://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/seasons/2024/types/0/athletes/${id}/statistics/0?lang=en&region=us`
+		`http://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/seasons/2024/types/0/athletes/${id}/statistics/0?lang=en&region=us`,
+		{
+			headers: {
+				"Cache-Control": "no-cache",
+			},
+		}
 	);
 	if (!res.ok) {
 		return 0;

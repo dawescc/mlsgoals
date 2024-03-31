@@ -4,8 +4,9 @@
 
 body {
 	@apply bg-white text-black font-light
-	dark:bg-black dark:text-white/90
-	text-[3rem]/[1] antialiased;
+	dark:bg-black dark:text-[hsl(0,0,90)]
+	text-[2.25rem]/[1]
+	md:text-[3rem]/[1] antialiased;
 }
 
 .footer {
@@ -13,7 +14,7 @@ body {
 }
 
 .bg-colors {
-	@apply bg-white text-black dark:bg-black dark:text-white/90;
+	@apply bg-white dark:bg-black;
 }
 
 h1 {

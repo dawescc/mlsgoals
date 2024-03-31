@@ -1,7 +1,11 @@
 "use server";
 
 export async function fetchPlayerName(id: string) {
-	const res = await fetch(`http://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/seasons/2024/athletes/${id}?lang=en&region=us`);
+	const res = await fetch(`http://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/seasons/2024/athletes/${id}?lang=en&region=us`, {
+		headers: {
+			"Cache-Control": "no-cache",
+		},
+	});
 	if (!res.ok) {
 		const data = [] as any;
 		return data;
