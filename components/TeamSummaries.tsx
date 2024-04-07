@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import Footer from "./Footer";
+import PlayerExtras from "./PlayerExtras";
 
 export default function TeamSummaries({ teams, className }: any) {
 	return (
@@ -16,13 +18,17 @@ export default function TeamSummaries({ teams, className }: any) {
 						<h3>{team.owner}</h3>
 						<div className='grid grid-cols-1 gap-3'>
 							{team.players.map((player: any) => (
-								<div
+								<Link
 									key={player.id}
-									className='flex justify-between items-end'>
-									<span>{player.name}</span>
+									href={`https://www.espn.com/soccer/player/_/id/${player.id as string}`}
+									className='flex justify-between items-end player-link'>
+									<span className='flex items-center'>
+										<PlayerExtras id={player.id} />
+										{player.name}
+									</span>
 									<span className='select-none'>&nbsp;</span>
 									<span>{player.goals}</span>
-								</div>
+								</Link>
 							))}
 						</div>
 					</div>

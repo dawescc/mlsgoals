@@ -5,19 +5,19 @@ const defaultUrl = process.env.VERCEL_URL ? `https://mls.dawes.cc/` : "http://lo
 
 export const metadata = {
 	metadataBase: new URL(defaultUrl),
-	title: "MG MLS Goal Race",
-	description: "Mind Goblin's 2024 MLS Goal Race",
+	title: "MG MLS Golden Boot",
+	description: "Mind Goblin's 2024 MLS Golden Boot",
 	openGraph: {
-		title: "MG MLS Goal Race",
-		description: "Mind Goblin's 2024 MLS Goal Race",
+		title: "MG MLS Golden Boot",
+		description: "Mind Goblin's 2024 MLS Golden Boot",
 		url: `${defaultUrl}`,
-		siteName: "MG MLS Goal Race",
+		siteName: "MG MLS Golden Boot",
 		type: "website",
 		images: [
 			{
 				width: 1200,
 				height: 600,
-				alt: "Mind Goblin's 2024 MLS Goal Race",
+				alt: "Mind Goblin's 2024 MLS Golden Boot",
 			},
 		],
 	},
