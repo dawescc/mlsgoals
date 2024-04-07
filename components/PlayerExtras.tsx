@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 const loader = () => {
 	return (
 		<svg
-			className='animate-spin h-8 w-8 text-black dark:text-white'
+			className='animate-spin aspect-square h-auto w-[1ch] text-black dark:text-white'
 			xmlns='http://www.w3.org/2000/svg'
 			fill='none'
 			viewBox='0 0 24 24'>
@@ -70,9 +70,9 @@ const PlayerExtras: React.FC<PlayerExtrasProps> = ({ id }) => {
 	}, [id]);
 
 	return (
-		<div className='flex gap-2 max-h-full py-1 px-2'>
+		<div className='flex items-center relative w-[2ch]'>
 			{loadingNation ? (
-				<div className='flex justify-center items-center h-8 w-auto'>{loader()}</div>
+				<div className='flex justify-center items-center'>{loader()}</div>
 			) : (
 				extras.nation && (
 					<Image
@@ -80,14 +80,14 @@ const PlayerExtras: React.FC<PlayerExtrasProps> = ({ id }) => {
 						width={100}
 						height={100}
 						alt='National Flag'
-						className='h-8 w-auto'
+						className='aspect-square h-auto w-[1ch]'
 						onLoad={() => setLoadingNation(false)}
 					/>
 				)
 			)}
 
 			{loadingClub ? (
-				<div className='flex justify-center items-center h-8 w-auto'>{loader()}</div>
+				<div className='flex justify-center items-center'>{loader()}</div>
 			) : (
 				extras.club && (
 					<Image
@@ -95,7 +95,7 @@ const PlayerExtras: React.FC<PlayerExtrasProps> = ({ id }) => {
 						width={100}
 						height={100}
 						alt='Club Logo'
-						className='h-8 w-auto'
+						className='aspect-square h-auto w-[1ch]'
 						onLoad={() => setLoadingClub(false)}
 					/>
 				)

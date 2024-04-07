@@ -35,9 +35,12 @@ h3 {
 	@apply [&:first-child.Jrue]:*:text-[#0A2240] [&:first-child.Jrue]:*:dark:text-[#CE0E2D];
 	@apply [&:first-child.Ruan]:*:text-[#F7B5CD] [&:first-child.Ruan]:*:dark:text-[#F7B5CD];
 	@apply [&:first-child.Zuey]:*:text-[#80000A] [&:first-child.Zuey]:*:dark:text-[#80000A];
-	/* @apply [&:first-child]:*:text-yellow-400 [&:last-child]:*:text-red-500; */
-	@apply [&:last-child]:*:border-dashed [&:last-child]:*:border-t-[1px] [&:last-child]:*:border-t-[#80000A];
 	@apply *:transition-colors duration-[333ms];
+
+	&::after {
+		content: "";
+		@apply block relative -top-[1.95lh] md:-top-[1.45lh] w-full border-dashed border-t-2 border-[#80000A];
+	}
 }
 
 #leaderboard > a:hover,
